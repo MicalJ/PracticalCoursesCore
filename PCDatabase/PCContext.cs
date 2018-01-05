@@ -15,7 +15,7 @@ namespace PCDatabase
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=.;Database=PCDatabase;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=PREDATOR\SQLEXPRESS;Database=PCDatabase;Trusted_Connection=True;");
         }
     }
 }
