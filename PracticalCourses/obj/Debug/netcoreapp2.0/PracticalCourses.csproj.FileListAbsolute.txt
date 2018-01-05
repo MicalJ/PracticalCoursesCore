@@ -1,0 +1,5 @@
+C:\Repos\PracticalCourses\PracticalCourses\bin\Debug\netcoreapp2.0\PCDatabase.dll
+C:\Repos\PracticalCourses\PracticalCourses\obj\Debug\netcoreapp2.0\PracticalCourses.csprojResolveAssemblyReference.cache
+C:\Repos\PracticalCourses\PracticalCourses\obj\Debug\netcoreapp2.0\PracticalCourses.csproj.CoreCompileInputs.cache
+C:\Repos\PracticalCourses\PracticalCourses\obj\Debug\netcoreapp2.0\PracticalCourses.AssemblyInfoInputs.cache
+C:\Repos\PracticalCourses\PracticalCourses\obj\Debug\netcoreapp2.0\PracticalCourses.AssemblyInfo.cs

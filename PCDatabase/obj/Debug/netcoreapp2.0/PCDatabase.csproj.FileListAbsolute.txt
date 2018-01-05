@@ -1,0 +1,8 @@
+C:\Repos\PracticalCourses\PCDatabase\bin\Debug\netcoreapp2.0\PCDatabase.deps.json
+C:\Repos\PracticalCourses\PCDatabase\bin\Debug\netcoreapp2.0\PCDatabase.dll
+C:\Repos\PracticalCourses\PCDatabase\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
+C:\Repos\PracticalCourses\PCDatabase\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml
+C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.csprojResolveAssemblyReference.cache
+C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.csproj.CoreCompileInputs.cache
+C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.AssemblyInfoInputs.cache
+C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.AssemblyInfo.cs
