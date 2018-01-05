@@ -4746,6 +4746,16 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "PCDatabase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/PCDatabase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PCDatabase.dll": {}
+        }
       }
     }
   },
@@ -12525,12 +12535,18 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "PCDatabase/1.0.0": {
+      "type": "project",
+      "path": "../PCDatabase/PCDatabase.csproj",
+      "msbuildProject": "../PCDatabase/PCDatabase.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.3",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "PCDatabase >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12568,7 +12584,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Repos\\PracticalCourses\\PCDatabase\\PCDatabase.csproj": {
+              "projectPath": "C:\\Repos\\PracticalCourses\\PCDatabase\\PCDatabase.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
