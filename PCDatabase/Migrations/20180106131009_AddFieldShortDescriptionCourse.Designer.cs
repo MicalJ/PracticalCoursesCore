@@ -12,9 +12,10 @@ using System;
 namespace PCDatabase.Migrations
 {
     [DbContext(typeof(PCContext))]
-    partial class PCContextModelSnapshot : ModelSnapshot
+    [Migration("20180106131009_AddFieldShortDescriptionCourse")]
+    partial class AddFieldShortDescriptionCourse
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
