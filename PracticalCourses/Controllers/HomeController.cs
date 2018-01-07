@@ -9,5 +9,10 @@ namespace PracticalCourses.Controllers
         {
             return View();
         }
+
+        public IActionResult SitesStatic(string name)
+        {
+            return View(name);
+        }
     }
 }
