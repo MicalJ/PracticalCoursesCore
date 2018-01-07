@@ -29,11 +29,12 @@ namespace PracticalCourses
             services.AddMvc();
 
             services.AddAutoMapper(opt =>
-           opt.CreateMissingTypeMaps = true,
-           Assembly.GetEntryAssembly());
-            
+          opt.CreateMissingTypeMaps = true,
+          Assembly.GetEntryAssembly());
+
             services.AddScoped<PCContext>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<ICourseService, CourseService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

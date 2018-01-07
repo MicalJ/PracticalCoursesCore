@@ -1,54 +1,68 @@
-﻿@{
+﻿@model PracticalCourses.ViewModel.HomeIndexViewModel
+@using PracticalCourses.Infrastructure
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Praktyczne kursy";
 }
 
-    <nav class="kategorieHorizontal">
-        <ul>
+<nav class="kategorieHorizontal">
+    <ul>
+        @foreach (var category in Model.Categories)
+        {
             <li>
-                <a href="link" style="background-image: url(~/categories/aspnet.png)">
-                    ASP.NET
+                <a href="@Url.Action("List","Course", new { nameCategory= category.NameCategory.ToLower()})" style="background-image: url(@Url.PathToImagesCategories(category.NameFileIcon));">
+                    @category.NameCategory
                 </a>
             </li>
-        </ul>
-        <a href="link">
-            <img id="baner" src="@Url.Content("~/images/baner.png")" />
-        </a>
-    </nav>
+        }
+    </ul>
 
-    <section>
-        <ul class="KursyTrzyKolumny duzaListaKursy">
+    <a href="link">
+        <img id="baner" src="@Url.Content("~/images/baner.png")" />
+    </a>
+</nav>
+
+<section>
+    <ul class="KursyTrzyKolumny duzaListaKursy">
+        @foreach (var news in Model.News)
+        {
             <li>
                 <article>
                     <a class="dodajDoKoszykaLink" href="link">
                         <img src="@Url.Content("~/images/koszyk.png")" />
                     </a>
-                    <a class="kursSzczegolyLink" href="link">
+                    <a class="kursSzczegolyLink" href="@Url.Action("Details","Course", new { courseId = news.CourseId})">
                         <div class="bestsellerFlag"></div>
-                        <img class="kurs" src="@Url.Content("~/courses/obrazekcss.png")" />
+                        <img class="kurs" src="@Url.PathToImagesCourses(news.NameFileImage)" />
                         <h1>
-                            Tutaj będzie tytuł
+                            @news.TitleCourse - @news.AuthorCourse
                         </h1>
                     </a>
                 </article>
             </li>
-        </ul>
-    </section>
-    <section>
-        <ul class="KursyTrzyKolumny duzaListaKursy">
+        }
+    </ul>
+</section>
+
+<section>
+    <ul class="KursyTrzyKolumny duzaListaKursy">
+        @foreach (var bestseller in Model.Bestsellers)
+        {
             <li>
                 <article>
                     <a class="dodajDoKoszykaLink" href="link">
                         <img src="@Url.Content("~/images/koszyk.png")" />
                     </a>
-                    <a class="kursSzczegolyLink" href="link">
+                    <a class="kursSzczegolyLink" href="@Url.Action("Details","Course", new { courseId=bestseller.CourseId})">
                         <div class="newFlag"></div>
-                        <img class="kurs" src="@Url.Content("~/courses/obrazekaspnet.png")" />
+                        <img class="kurs" src="@Url.PathToImagesCourses(bestseller.NameFileImage)" />
                         <h1>
-                            Tutaj będzie tytuł
+                            @bestseller.TitleCourse - @bestseller.AuthorCourse
                         </h1>
                     </a>
                 </article>
             </li>
-         </ul>
-    </section>
+        }
+    </ul>
+</section>
