@@ -1,9 +1,9 @@
 C:\Repos\PracticalCourses\PCDatabase\bin\Debug\netcoreapp2.0\PCDatabase.deps.json
 C:\Repos\PracticalCourses\PCDatabase\bin\Debug\netcoreapp2.0\PCDatabase.dll
 C:\Repos\PracticalCourses\PCDatabase\bin\Debug\netcoreapp2.0\PCDatabase.pdb
-C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.csprojResolveAssemblyReference.cache
 C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.csproj.CoreCompileInputs.cache
 C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.AssemblyInfoInputs.cache
 C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.AssemblyInfo.cs
 C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.dll
 C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.pdb
+C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.csprojResolveAssemblyReference.cache
