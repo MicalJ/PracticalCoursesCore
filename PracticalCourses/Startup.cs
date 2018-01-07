@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PCDatabase;
+using PracticalCourses.Interfaces;
+using PracticalCourses.Services;
 
 namespace PracticalCourses
 {
@@ -31,6 +33,7 @@ namespace PracticalCourses
            Assembly.GetEntryAssembly());
             
             services.AddScoped<PCContext>();
+            services.AddScoped<ICategoryService, CategoryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
