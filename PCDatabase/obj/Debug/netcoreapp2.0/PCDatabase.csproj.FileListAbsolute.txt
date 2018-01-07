@@ -6,3 +6,4 @@ C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.Assembly
 C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.AssemblyInfo.cs
 C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.dll
 C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.pdb
+C:\Repos\PracticalCourses\PCDatabase\obj\Debug\netcoreapp2.0\PCDatabase.csprojResolveAssemblyReference.cache

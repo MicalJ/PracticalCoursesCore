@@ -25,18 +25,18 @@
 
 <section>
     <ul class="KursyTrzyKolumny duzaListaKursy">
-        @foreach (var news in Model.News)
+        @foreach (var bestseller in Model.Bestsellers)
         {
             <li>
                 <article>
-                    <a class="dodajDoKoszykaLink" href="link">
+                    <a class="dodajDoKoszykaLink" href="@Url.Action("AddToBasket","Basket", new { id=bestseller.CourseId})">
                         <img src="@Url.Content("~/images/koszyk.png")" />
                     </a>
-                    <a class="kursSzczegolyLink" href="@Url.Action("Details","Course", new { courseId = news.CourseId})">
-                        <div class="bestsellerFlag"></div>
-                        <img class="kurs" src="@Url.PathToImagesCourses(news.NameFileImage)" />
+                    <a class="kursSzczegolyLink" href="@Url.Action("Details","Course", new { courseId = bestseller.CourseId})">
+                        <div class="bestsellerFlag"><img src="~/images/new.png" /></div>
+                        <img class="kurs" src="@Url.PathToImagesCourses(bestseller.NameFileImage)" />
                         <h1>
-                            @news.TitleCourse - @news.AuthorCourse
+                            @bestseller.TitleCourse - @bestseller.AuthorCourse
                         </h1>
                     </a>
                 </article>
@@ -47,18 +47,18 @@
 
 <section>
     <ul class="KursyTrzyKolumny duzaListaKursy">
-        @foreach (var bestseller in Model.Bestsellers)
+        @foreach (var news in Model.News)
         {
             <li>
                 <article>
-                    <a class="dodajDoKoszykaLink" href="link">
+                    <a class="dodajDoKoszykaLink" href="@Url.Action("AddToBasket", "Basket", new { id=news.CourseId})">
                         <img src="@Url.Content("~/images/koszyk.png")" />
                     </a>
-                    <a class="kursSzczegolyLink" href="@Url.Action("Details","Course", new { courseId=bestseller.CourseId})">
-                        <div class="newFlag"></div>
-                        <img class="kurs" src="@Url.PathToImagesCourses(bestseller.NameFileImage)" />
+                    <a class="kursSzczegolyLink" href="@Url.Action("Details","Course", new { courseId=news.CourseId})">
+                        <div class="newFlag"><img src="~/images/bestseller.png"/></div>
+                        <img class="kurs" src="@Url.PathToImagesCourses(news.NameFileImage)" />
                         <h1>
-                            @bestseller.TitleCourse - @bestseller.AuthorCourse
+                            @news.TitleCourse - @news.AuthorCourse
                         </h1>
                     </a>
                 </article>

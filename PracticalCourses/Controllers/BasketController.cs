@@ -6,21 +6,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PracticalCourses.Controllers
 {
-    public class CourseController : Controller
+    public class BasketController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
 
-        [HttpGet("{nameCategory}")]
-        public IActionResult List(string nameCategory)
-        {
-            return View();
-        }
-
-        [HttpGet("{courseId}")]
-        public IActionResult Details(string courseId)
+        public IActionResult AddToBasket(string id)
         {
             return View();
         }

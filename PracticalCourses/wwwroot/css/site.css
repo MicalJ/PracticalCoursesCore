@@ -612,7 +612,7 @@ ul.TrzyKolumnyList {
     }
 
 div.newFlag {
-    background-image: url(Images/new.png);
+    background-image: url('/images/new.png');
     background-repeat: no-repeat;
     display: block;
     width: 100%;
@@ -623,7 +623,7 @@ div.newFlag {
 }
 
 div.bestsellerFlag {
-    background-image: url(Images/bestseller.png);
+    background-image: url(images/bestseller.png);
     background-repeat: no-repeat;
     display: block;
     width: 100%;
