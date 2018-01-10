@@ -13,6 +13,7 @@ namespace PracticalCourses.Models
         public DateTime DateAdded { get; set; }
         public string NameFileImage { get; set; }
         public string DescriptionCourse { get; set; }
+        public string ShortDescriptionCourse { get; set; }
         public decimal PriceCourse { get; set; }
         public bool Bestseller { get; set; }
         public bool Hidden { get; set; }

@@ -35,5 +35,10 @@ namespace PracticalCourses.Services
 
             return courses;
         }
+
+        public Course GetById(int courseId)
+        {
+            return _context.Courses.Find(courseId);
+        }
     }
 }

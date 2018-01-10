@@ -13,5 +13,7 @@ namespace PracticalCourses.Interfaces
         List<Course> GetThreeNews();
 
         List<Course> GetThreeBestsellers();
+
+        Course GetById(int courseId);
     }
 }

@@ -11,10 +11,12 @@ namespace PracticalCourses.Controllers
     public class CourseController : Controller
     {
         private readonly ICategoryService _categoryService;
+        private readonly ICourseService _courseService;
 
-        public CourseController(ICategoryService categoryService)
+        public CourseController(ICategoryService categoryService, ICourseService courseService)
         {
             _categoryService = categoryService;
+            _courseService = courseService;
         }
         
         [HttpGet]
@@ -26,9 +28,11 @@ namespace PracticalCourses.Controllers
             return View();
         }
         
-        public IActionResult Details(string courseId)
+        [HttpGet]
+        [Route("kurs-{courseId}.html")]
+        public IActionResult Details(int courseId)
         {
-            return View();
+            return View(AutoMapper.Mapper.Map<CourseResponse>(_courseService.GetById(courseId)));
         }
     }
 }
