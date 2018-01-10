@@ -1,0 +1,16 @@
+﻿@model IEnumerable<PracticalCourses.Models.CategoryResponse>
+@using PracticalCourses.Infrastructure
+
+<nav class="KategorieVertical">
+    <ul>
+        @foreach (var category in Model)
+        {
+            <li>
+                <a href="@Url.Action("List","Course", new { nameCategory=category.NameCategory.ToString()})" 
+                   style="background-image: url(@Url.PathToImagesCategories(category.NameFileIcon));">
+                    @category.NameCategory
+                </a>
+            </li>
+        }
+    </ul>
+</nav>

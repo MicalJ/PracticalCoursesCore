@@ -1,4 +1,5 @@
 ﻿using PCDatabase.DAL;
+using PracticalCourses.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +9,8 @@ namespace PracticalCourses.ViewModel
 {
     public class HomeIndexViewModel
     {
-        public List<Category> Categories { get; set; }
-        public List<Course> News { get; set; }
-        public List<Course> Bestsellers { get; set; }
+        public List<CategoryResponse> Categories { get; set; }
+        public List<CourseResponse> News { get; set; }
+        public List<CourseResponse> Bestsellers { get; set; }
     }
 }

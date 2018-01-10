@@ -18,7 +18,7 @@ namespace PracticalCourses.Services
             _context = pCContext;
         }
 
-        public List<Category> GetAllCategory()
+        public async Task<List<Category>> GetAllCategory()
         {
             return _context.Categories.AsNoTracking().ToList();
         }

@@ -8,11 +8,6 @@ namespace PracticalCourses.Controllers
 {
     public class BasketController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-
         public IActionResult AddToBasket(string id)
         {
             return View();

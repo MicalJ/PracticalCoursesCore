@@ -11,7 +11,8 @@
         @foreach (var category in Model.Categories)
         {
             <li>
-                <a href="@Url.Action("List","Course", new { nameCategory= category.NameCategory.ToLower()})" style="background-image: url(@Url.PathToImagesCategories(category.NameFileIcon));">
+                <a href="@Url.Action("List","Course", new { nameCategory= category.NameCategory.ToLower()})" 
+                   style="background-image: url(@Url.PathToImagesCategories(category.NameFileIcon));">
                     @category.NameCategory
                 </a>
             </li>

@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PracticalCourses.Interfaces;
+using PracticalCourses.Models;
 using PracticalCourses.ViewModel;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace PracticalCourses.Controllers
 {
@@ -16,11 +19,11 @@ namespace PracticalCourses.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var categories = _categoryService.GetAllCategory();
-            var newsCourses = _courseService.GetThreeNews();
-            var bestesellersCourses = _courseService.GetThreeBestsellers();
+            var categories = AutoMapper.Mapper.Map<List<CategoryResponse>>(await _categoryService.GetAllCategory());
+            var newsCourses = AutoMapper.Mapper.Map<List<CourseResponse>>(_courseService.GetThreeNews());
+            var bestesellersCourses = AutoMapper.Mapper.Map<List<CourseResponse>>(_courseService.GetThreeBestsellers());
 
             var vm = new HomeIndexViewModel
             {

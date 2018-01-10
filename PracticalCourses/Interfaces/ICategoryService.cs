@@ -8,6 +8,6 @@ namespace PracticalCourses.Interfaces
 {
     public interface ICategoryService
     {
-        List<Category> GetAllCategory();
+           Task<List<Category>> GetAllCategory();
     }
 }

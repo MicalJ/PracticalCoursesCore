@@ -3,26 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using PracticalCourses.Interfaces;
+using PracticalCourses.Models;
 
 namespace PracticalCourses.Controllers
 {
     public class CourseController : Controller
     {
-        public IActionResult Index()
+        private readonly ICategoryService _categoryService;
+
+        public CourseController(ICategoryService categoryService)
         {
-            return View();
+            _categoryService = categoryService;
         }
 
-        [HttpGet("{nameCategory}")]
+        
         public IActionResult List(string nameCategory)
         {
             return View();
         }
 
-        [HttpGet("{courseId}")]
+        
         public IActionResult Details(string courseId)
         {
             return View();
         }
+
+        
+ 
     }
 }
