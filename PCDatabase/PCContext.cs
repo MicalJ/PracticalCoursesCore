@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PCDatabase.DAL;
+using PCDatabase.DbModels;
 using System;
 using System.Collections.Generic;
 using System.Text;

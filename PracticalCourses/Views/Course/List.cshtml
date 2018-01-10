@@ -1,11 +1,22 @@
 ﻿
+
 @{
     ViewData["Title"] = "List";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<div id="ListaKategoriZawartosc">
+    @await Component.InvokeAsync("MenuCategories")
 
+    <div id="KategorieListPrawaSekcja">
+        <div id="Breadcrumb">
+            <img src="@Url.Content("~/images/dommaly.png")" />
+            <a href="link">
+                Start > ASP.NET
+            </a>
+        </div>
 
-
-
- @await Component.InvokeAsync("MenuCategories")
+            @await Component.InvokeAsync("CoursesList", new { nameCategory = ViewBag.NameCategory })
+   
+    </div>
+</div>

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PCDatabase.DAL
+namespace PCDatabase.DbModels
 {
     public class Order
     {

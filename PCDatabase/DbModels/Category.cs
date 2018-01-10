@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PCDatabase.DAL
+namespace PCDatabase.DbModels
 {
     public class Category
     {

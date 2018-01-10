@@ -1,5 +1,4 @@
-﻿using PCDatabase.DAL;
-using PracticalCourses.Models;
+﻿using PracticalCourses.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

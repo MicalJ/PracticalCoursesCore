@@ -55,16 +55,16 @@ namespace PracticalCourses
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    name: "StaticSites",
+                    template: "strona/{name}.html",
+                    defaults: new { controller = "Home", action = "SitesStatic" });
             });
 
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                    name: "StaticSites",
-                    template: "strona/{name}.html",
-                    defaults: new { controller = "Home", action = "SitesStatic" });
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

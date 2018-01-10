@@ -16,20 +16,19 @@ namespace PracticalCourses.Controllers
         {
             _categoryService = categoryService;
         }
-
         
+        [HttpGet]
+        [Route("Kategoria/{nameCategory}")]
         public IActionResult List(string nameCategory)
         {
+            ViewBag.NameCategory = nameCategory;
+
             return View();
         }
-
         
         public IActionResult Details(string courseId)
         {
             return View();
         }
-
-        
- 
     }
 }

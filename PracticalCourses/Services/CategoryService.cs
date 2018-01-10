@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PCDatabase;
-using PCDatabase.DAL;
+using PCDatabase.DbModels;
 using PracticalCourses.Interfaces;
 using System;
 using System.Collections.Generic;

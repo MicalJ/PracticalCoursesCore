@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
 using PCDatabase;
-using PCDatabase.DAL;
+using PCDatabase.DbModels;
 using System;
 
 namespace PCDatabase.Migrations

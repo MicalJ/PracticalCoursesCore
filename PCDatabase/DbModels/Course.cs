@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace PCDatabase.DAL
+namespace PCDatabase.DbModels
 {
     public class Course
     {

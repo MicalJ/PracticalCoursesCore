@@ -56,7 +56,7 @@
                         <img src="@Url.Content("~/images/koszyk.png")" />
                     </a>
                     <a class="kursSzczegolyLink" href="@Url.Action("Details","Course", new { courseId=news.CourseId})">
-                        <div class="newFlag"><img src="~/images/bestseller.png"/></div>
+                        <div class="newFlag"><img src="@Url.Content("~/images/bestseller.png")"/></div>
                         <img class="kurs" src="@Url.PathToImagesCourses(news.NameFileImage)" />
                         <h1>
                             @news.TitleCourse - @news.AuthorCourse

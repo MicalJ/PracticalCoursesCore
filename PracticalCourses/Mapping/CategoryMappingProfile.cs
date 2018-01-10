@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using PCDatabase.DAL;
+using PCDatabase.DbModels;
 using PracticalCourses.Models;
 using System;
 using System.Collections.Generic;

@@ -1,4 +1,4 @@
-﻿namespace PCDatabase.DAL
+﻿namespace PCDatabase.DbModels
 {
     public class OrderPosition
     {
