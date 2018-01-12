@@ -16,7 +16,7 @@ namespace PracticalCourses.ViewComponents
         {
             _categoryService = categoryService;
         }
-
+        
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var categories = AutoMapper.Mapper.Map<List<CategoryResponse>>(await _categoryService.GetAllCategory());
